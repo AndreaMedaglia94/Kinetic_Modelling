@@ -1,0 +1,6 @@
+# File necessari alla pubblicazione della presentazione su GitHub Pages.
+*
+!.gitignore
+!.nojekyll
+!index.html
+!presentazione_GoogleSites.html
