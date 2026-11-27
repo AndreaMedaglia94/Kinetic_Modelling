@@ -19,7 +19,7 @@
 :root{--title:#515151;--ink:#212121;--blue:#339CFF;--orange:#F3883B;--red:var(--orange);--green:#008000;--muted:#777;--line:#d8d8d8;--scale:1}
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;height:100%;overflow:hidden}
-body{font-family:ComputerModern,'Times New Roman',serif;color:var(--ink);background:#ededed}
+body{font-family:ComputerModern,'Times New Roman',serif;color:var(--ink);background:#fff}
 button,select,input{font:inherit}
 button,select{color:var(--title);background:#fff;border:1px solid #ccc;border-radius:3px}
 button{cursor:pointer}
@@ -28,7 +28,7 @@ button:disabled{opacity:.35;cursor:default}
 button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 [hidden]{display:none!important}
 #viewport{position:fixed;inset:0 0 58px;display:grid;place-items:center;overflow:hidden}
-#deck{position:absolute;left:50%;top:50%;margin-left:-800px;margin-top:-450px;width:1600px;height:900px;transform:scale(var(--scale));transform-origin:center;background:#fff;box-shadow:0 1px 16px #0000000d}
+#deck{position:absolute;left:50%;top:50%;margin-left:-800px;margin-top:-450px;width:1600px;height:900px;transform:scale(var(--scale));transform-origin:center;background:#fff;box-shadow:none}
 .slide{position:absolute;inset:0;overflow:hidden;background:#fff}
 .slide-title{position:absolute;top:24px;left:60px;right:60px;margin:0;color:var(--title);font-size:52px;line-height:1.2;font-weight:400;text-align:center}
 .slide-title::after{content:'';position:absolute;left:50%;top:75px;width:1120px;height:1px;transform:translateX(-50%);background:#bcbcbc}
@@ -264,7 +264,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
 @media print{.closing-slide,.closing-slide[hidden]{display:grid!important}}
 
 /* Navigazione esterna al foglio della slide. */
-#toolbar{position:fixed;left:0;bottom:0;right:0;height:58px;display:flex;align-items:center;justify-content:center;gap:12px;background:#fafafa;border-top:1px solid #d4d4d4;font-size:17px;padding:6px 14px}
+#toolbar{position:fixed;left:0;bottom:0;right:0;height:58px;display:flex;align-items:center;justify-content:center;gap:12px;background:#fff;border-top:0;font-size:17px;padding:6px 14px}
 #toolbar button{min-width:38px;height:34px;padding:2px 12px}
 #slide-picker{height:34px;max-width:280px;min-width:155px;padding:3px 8px}
 #presentation-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
